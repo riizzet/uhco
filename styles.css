@@ -1,0 +1,224 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.kategorie {
+    margin-bottom: 20px;
+}
+
+.kategorie-titel {
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.produkt-button {
+    margin: 10px;
+    width: 100%;
+    height: 80px;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #fff;
+    color: #000;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border: 1px solid #ccc;
+}
+
+.produkt-button:hover {
+    background-color: grey;
+    color: #fff;
+}
+
+.produkt-button:focus {
+    background-color: #fff;
+    color: #000;
+}
+
+.btn-neue-bestellung {
+    background-color: black;
+    color: #fff !important;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: 900;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: none;
+}
+
+.btn-neue-bestellung:focus,
+.btn-neue-bestellung:hover {
+    background-color: black;
+    color: #fff !important;
+}
+
+.header-title {
+    font-size: 50px;
+    font-weight: 900;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: 900;
+    font-size: 25px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+#bestellzusammenfassung h2 {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: 900;
+    font-size: 25px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        max-width: 100%;
+    }
+
+    .produkt-button {
+        width: 100%;
+        height: 70px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        max-width: 100%;
+    }
+
+    .produkt-button {
+        width: 100%;
+        height: 53px;
+        font-size: 14px;
+    }
+
+    .kategorie-titel {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+}
+
+.nachtmodus {
+    background-color: #000;
+    color: #fff;
+}
+
+.nachtmodus .container {
+    color: #fff;
+}
+
+.nachtmodus .produkt-button {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #666;
+}
+
+.nachtmodus .produkt-button:hover {
+    background-color: #555;
+}
+
+.nachtmodus .produkt-button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.nachtmodus .btn-neue-bestellung {
+    background-color: #fff;
+    color: #000 !important;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: 900;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: none;
+}
+
+.nachtmodus .btn-neue-bestellung:focus {
+    outline: none !important;
+    box-shadow: none;
+    background-color: white !important;
+    color: black !important;
+}
+
+.nachtmodus .btn-neue-bestellung:hover {
+    background-color: #FF0000;
+}
+
+.produkt-button[data-name*="2 dl"] {
+    color: orange !important;
+    font-weight: 600;
+}
+
+.produkt-button[data-name*="wein 5 dl"] {
+    color: #EE82EE !important;
+    font-weight: 600;
+}
+
+.produkt-button[data-name*="Rosé 5 dl"] {
+    color: #EE82EE !important;
+    font-weight: 600;
+}
+
+.produkt-button[data-name*="Feldschlösschen"],
+.produkt-button[data-name*="Calanda"],
+.produkt-button[data-name*="Schlossgold"],
+.produkt-button[data-name*="Öufi"] {
+    color: #CFB172 !important;
+    font-weight: 600;
+}
+
+.produkt-button[data-name*="Raclette"],
+.produkt-button[data-name*="Burger"],
+.produkt-button[data-name*="Chäsbrägu"] {
+    color: #66CDAA !important;
+    font-weight: 600;
+}
+
+.produkt-button[data-name*="Fläschli"] {
+    color: #3CB371 !important;
+    font-weight: 600;
+}
+
+.produkt-button[data-name*="Kirsch"] {
+    color: #F6BE00!important;
+    font-weight: 600;
+}
+
+.produkt-button[data-name*="Kaffee"],
+.produkt-button[data-name*="Tee"],
+.produkt-button[data-name*="Musig-Kaffi"],
+.produkt-button[data-name*="UHCO-Kaffi"] {
+    color: #D2691E !important;
+    font-weight: 600;
+}
+
+.img-fluid.max-width-25 {
+    max-width: 30%;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 767px) {
+    .kategorie .col-md-2 {
+        flex-basis: auto;
+        max-width: 50%;
+        text-align: center;
+    }
+
+    .img-fluid.max-width-25 {
+        max-width: 100px;
+    }
+}

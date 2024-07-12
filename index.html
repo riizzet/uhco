@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UHCO / Musig Raclettezelt</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <style>
+        .kategorie-titel i {
+            margin-right: 10px;
+        }
+        .nachtmodus .kategorie-titel i {
+            color: white;
+        }
+        .tagmodus .kategorie-titel i {
+            color: black;
+        }
+    </style>
+</head>
+<body class="nachtmodus">
+    <header>
+        <div class="container mt-3 mb-3 text-center">
+            <button id="tag-modus-button" class="btn btn-light mr-2" onclick="toggleTagModus()">
+                <i class="fas fa-sun"></i> Hell
+            </button>
+            <button id="nacht-modus-button" class="btn btn-light" onclick="toggleNachtModus()">
+                <i class="fas fa-moon"></i> Dunkel
+            </button>
+        </div>
+    </header>
+    <main>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 text-center">
+                <img src="bilder/uhcologo.png" class="img-fluid max-width-25" alt="UHCO Logo">
+            </div>
+             <div class="col-md-6 text-center">
+                <img src="bilder/musiglogo.png" class="img-fluid max-width-25" alt="Musig Logo">
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col-md-12 text-center">
+                <h1 class="header-title">Raclettezelt</h1>
+            </div>
+        </div>
+            <!-- Kategorie Essen -->
+            <div class="row kategorie">
+                <div class="col-md-12">
+                    <h2 class="kategorie-titel"><i class="fas fa-utensils"></i> Essen</h2>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <button class="btn btn-lg btn-light produkt-button" data-name="Raclette" data-preis="9.00">Raclette</button>
+                        </div>
+                        <div class="col-md-2">
+                            <button class="btn btn-lg btn-light produkt-button" data-name="Raclette Doppelt" data-preis="16.00">Raclette Doppelt</button>
+                        </div>
+                        <div class="col-md-2">
+                            <button class="btn btn-lg btn-light produkt-button" data-name="Burger" data-preis="8.00">Burger</button>
+                        </div>
+                        <div class="col-md-2">
+                            <button class="btn btn-lg btn-light produkt-button" data-name="Raclette Burger" data-preis="10.00">Raclette Burger</button>
+                        </div>
+                        <div class="col-md-2">
+                            <button class="btn btn-lg btn-light produkt-button" data-name="Chäsbrägu" data-preis="7.00">Chäsbrägu</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Kategorie Bier -->
+            <div class="row kategorie">
+                <div class="col-md-12">
+                    <h2 class="kategorie-titel"><i class="fas fa-beer"></i> Bier</h2>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <button class="btn btn-lg btn-light produkt-button" data-name="Feldschlösschen 5 dl" data-preis="6.00">Feldschlösschen 5 dl</button>
+                        </div>
+                        <div class="col-md-2">
+                            <button class="btn btn-lg btn-light produkt-button" data-name="Öufi Hell 5 dl" data-preis="6.00">Öufi Hell 5 dl</button>
+                        </div>
+                        <div class="col-md-2">
+                            <button class="btn btn-lg btn-light produkt-button" data-name="Schlossgold Alk. Frei 5 dl" data-preis="6.00">Schlossgold Alk. Frei 5 dl</button>
+                        </div>
+                        <div class="col-md-2">
+                            <button class="btn btn-lg btn-light produkt-button" data-name="Calanda Radler" data-preis="5.00">Calanda Radler</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Kategorie Wein -->
+            <div class="row kategorie">
+                <div class="col-md-12">
+                    <h2 class="kategorie-titel"><i class="fas fa-wine-glass-alt"></i> Wein</h2>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <button class="btn btn-lg btn-light produkt-button" data-name="Weisswein 2 dl" data-preis="8.00">Weisswein 2 dl</button>
+                        </div>
+                        <div class="col-md-2">
+                            <button class="btn btn-lg btn-light produkt-button" data-name="Rotwein 2 dl" data-preis="8.00">Rotwein 2 dl</button>
+                        </div>
+                        <div class="col-md-2">
+                            <button class="btn btn-lg btn-light produkt-button" data-name="Rosé 2 dl" data-preis="8.00">Rosé 2 dl</button>
+                        </div>
+                        <div class="col-md-2">
+                            <button class="btn btn-lg btn-light produkt-button" data-name="Weisswein 5 dl" data-preis="18.00">Weisswein 5 dl</button>
+                        </div>
+                        <div class="col-md-2">
+                            <button class="btn btn-lg btn-light produkt-button" data-name="Rotwein 5 dl" data-preis="18.00">Rotwein 5 dl</button>
+                        </div>
+                        <div class="col-md-2">
+                            <button class="btn btn-lg btn-light produkt-button" data-name="Rosé 5 dl" data-preis="18.00">Rosé 5 dl</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Kategorie Mineral -->
+            <div class="row kategorie">
+                <div class="col-md-12">
+                    <h2 class="kategorie-titel"><i class="fas fa-tint"></i> Mineral</h2>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <button class="btn btn-lg btn-light produkt-button" data-name="Fläschli Mineral 5 dl" data-preis="5.00">Fläschli 5 dl</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Kategorie Verdouerli -->
+            <div class="row kategorie">
+                <div class="col-md-12">
+                    <h2 class="kategorie-titel"><i class="fas fa-glass-martini"></i> Verdouerli</h2>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <button class="btn btn-lg btn-light produkt-button" data-name="Kirsch 2 cl" data-preis="3.00">Kirsch 2 cl</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Kategorie warme Getränke -->
+            <div class="row kategorie">
+                <div class="col-md-12">
+                    <h2 class="kategorie-titel"><i class="fas fa-coffee"></i> Warme Getränke</h2>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <button class="btn btn-lg btn-light produkt-button" data-name="Kaffee" data-preis="4.00">Kaffee</button>
+                        </div>
+                        <div class="col-md-2">
+                            <button class="btn btn-lg btn-light produkt-button" data-name="Tee" data-preis="3.00">Tee</button>
+                        </div>
+                        <div class="col-md-2">
+                            <button class="btn btn-lg btn-light produkt-button" data-name="Musig-Kaffi" data-preis="7.00">Musig-Kaffi</button>
+                        </div>
+                        <div class="col-md-2">
+                            <button class="btn btn-lg btn-light produkt-button" data-name="UHCO-Kaffi" data-preis="7.00">UHCO-Kaffi</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="bestellzusammenfassung">
+                        <h2>Zusammenfassung der Bestellung</h2>
+                        <ul id="bestell-liste">
+                            <!-- Bestellübersicht -->
+                        </ul>
+                        <p id="total">Total: Fr. 0.00</p>
+                    </div>
+                    <button class="btn btn-lg btn-primary btn-neue-bestellung" onclick="bestellungLeeren()">Neue Bestellung</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- JS -->
+    <script src="script.js"></script>
+    <script>
+        // JavaScript Moduswechsel
+        function toggleTagModus() {
+            document.body.classList.remove('nachtmodus');
+            document.body.classList.add('tagmodus');
+        }
+
+        function toggleNachtModus() {
+            document.body.classList.remove('tagmodus');
+            document.body.classList.add('nachtmodus');
+        }
+    </script>
+</body>
+</html>
