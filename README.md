@@ -1,3 +1,7 @@
-# Download
+# UHCO Bestellsystem
 
-[Download UHCO.zip]([https://github.com/riizzet/uhco/releases/download/v1.0/Uhco.rar])
+You can download the latest release of the project below.
+
+## Download
+
+[Download UHCO.rar](https://github.com/riizzet/uhco/releases/download/v1.0/Uhco.rar)
